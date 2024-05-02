@@ -1,0 +1,64 @@
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+
+local window = PabloLib:Create(
+"2 Antelligence V2 Ant Colony Game", -- Name here.
+"Enabled", -- If you want draggable set here to "Enabled" if you dont want set to "Disabled".
+"p" -- You can put any keybind here to open close.
+)
+
+local A1tab1 = window:CreateTab("createing")
+local A2tab1 = window:CreateTab("local player")
+local A4tab1 = window:CreateTab("settings")
+
+
+A4tab1:CreateButton("AIMBOT", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+end)
+
+A4tab1:CreateButton("lnfinite yield", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+A2tab1:CreateButton("auto attack speed", function()
+while true do
+wait(0.1)
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Combat"):WaitForChild("Attack"):FireServer()
+end
+end)
+
+A2tab1:CreateButton("speed auto", function()
+while true do
+wait(3)
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Sprint"):FireServer()
+end
+end)
+
+A2tab1:CreateButton("auto farm food", function()
+while true do
+wait(0.1)
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Eat"):FireServer(unpack(args))
+end
+end)
+
+A2tab1:CreateButton("Super Attack", function()
+while true do
+wait()
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Combat"):WaitForChild("BreakBlock"):FireServer()
+end
+end)
+
+A2tab1:CreateButton("auto light", function()
+while true do
+wait()
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Light")
+end
+end)
+
+A1tab1:CreateLabel("by mr rake")
+
+
+A3tab1:CreateInfo("teleports to any maps")
+A2tab1:CreateInfo("player hacks like super")
+A4tab1:CreateInfo("make edit your in gui")
+
+by rake
